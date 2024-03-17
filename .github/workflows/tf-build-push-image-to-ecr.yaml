@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       dir:
-        description: 'Directory with terraform resources'
+        description: 'terraform diectory resources'
         required: true
         default: 'terraform-gha'
 
