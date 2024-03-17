@@ -9,7 +9,7 @@ on:
         default: 'terraform-gha'
 
 jobs:
-  build2ecr:
+  prepare2ecr:
     name: 'Build and Push to ECR'
     runs-on: ubuntu-latest
 
