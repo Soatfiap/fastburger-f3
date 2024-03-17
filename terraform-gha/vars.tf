@@ -10,6 +10,12 @@ variable "regionDefault" {
   default = "us-east-1"
 }
 
+variable "aws_profile" {
+  type        = string
+  description = "The AWS profile to use to execute the commands"
+  default     = "default"
+}
+
 variable "engineRds" {
   default = "postgres"
 }
