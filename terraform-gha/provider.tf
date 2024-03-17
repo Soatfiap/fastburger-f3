@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default" # trocar pelo profile que tiver, ou retirar se utilizar o aws configure sem um profile
+  #profile = "default" # trocar pelo profile que tiver, ou retirar se utilizar o aws configure sem um profile
   region  = var.regionDefault
 
   default_tags {
