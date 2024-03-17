@@ -1,4 +1,4 @@
-name: Create terraform plan on folder 'terraform'
+name: Create terraform plan on folder 'terraform-gha'
 
 on:
   pull_request:
