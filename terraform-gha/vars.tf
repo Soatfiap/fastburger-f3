@@ -10,6 +10,12 @@ variable "regionDefault" {
   default = "us-east-1"
 }
 
+variable "aws_profile" {
+  type        = string
+  description = "The AWS profile to use to execute the commands"
+  default     = "default"
+}
+
 variable "engineRds" {
   default = "postgres"
 }
@@ -22,15 +28,15 @@ variable "rdsDbName" {
   default = "challenge"
 }
 
-#variable "rdsUser" {
-#  description = "it cames from gh secrets"
-#  default     = var.rdsuser
-#}
+variable "rdsUser" {
+  description = "it cames from gh secrets"
+  type        = string
+}
 
-#variable "rdsPass" {
-#  description = "it cames from gh secrets"
-#  default     = var.rdspass
-#}
+variable "rdsPass" {
+  description = "it cames from gh secrets"
+  type        = string
+}
 
 variable "instanceClass" {
   default = "db.t3.micro"
@@ -52,13 +58,13 @@ variable "spring_port" {
   default = "8080"
 }
 
-#variable "mercado_token" {
-#  description = "it cames from gh secrets"
-#  default     = var.mercado_pago
-#}
+variable "mercado_token" {
+  description = "it cames from gh secrets"
+  type        = string
+}
 
 variable "token_fallback" {
-  #default = "ODk4NDk1ODM4NTM4MjU0OS0wMTA3MjAtOGI0NWU2ODBjZDA4NWY5OTc2ODYzYTk1NjU1ZGFmZjctMTQzNzE2ND01"
+  #default = "ODk4NDk1ODM4NTM4MjU0OS0wMTA3MjAtOGI0NWU2ODBjZDA4NWY5OTc2ODYzYTk1NjU1ZGFmZjctMTQzNzE2ND15"
   default = "ODk4NDk1ODM4NTM4MjU0OS0wMTA3MjAtOGI0NWU2ODBjZDA4NWY5OTc2ODYzYTk1NjU1ZGFmZjctMTQzNzE2NDc3"
 }
 
