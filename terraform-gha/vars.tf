@@ -63,6 +63,16 @@ variable "mercado_token" {
   type        = string
 }
 
+variable "COGNITO_AWS_ACCESS_KEY_ID" {
+  description = "it cames from gh secrets"
+  type        = string
+}
+
+variable "COGNITO_AWS_SECRET_ACCESS_KEY" {
+  description = "it cames from gh secrets"
+  type        = string
+}
+
 variable "token_fallback" {
   default = "ODk4NDk1ODM4NTM4MjU0OS0wMTA3MjAtOGI0NWU2ODBjZDA4NWY5OTc2ODYzYTk1NjU1ZGFmZjctMTQzNzE2NDc3"
 }

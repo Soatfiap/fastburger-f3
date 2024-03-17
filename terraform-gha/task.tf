@@ -24,6 +24,14 @@ resource "aws_ecs_task_definition" "task" {
           value = "${var.spring_port}"
         },
         {
+          name  = "AWS_ACCESS_KEY_ID"
+          value = "${var.COGNITO_AWS_ACCESS_KEY_ID}"
+        },
+        {
+          name  = "AWS_SECRET_ACCESS_KEY"
+          value = "${var.COGNITO_AWS_SECRET_ACCESS_KEY}"
+        },
+        {
           name  = "MERCADO_TOKEN"
           value = "${var.mercado_token}"
         },
