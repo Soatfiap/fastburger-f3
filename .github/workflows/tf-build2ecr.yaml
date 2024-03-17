@@ -1,5 +1,4 @@
-
-name: Faz build e push do container-image par o ECR
+name: Faz build e push da container-image para o ECR
 
 on:
   workflow_dispatch:
