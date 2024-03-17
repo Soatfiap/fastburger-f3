@@ -1,4 +1,4 @@
-name: Create terraform plan on folder 'terraform-gha'
+name: Cria infra a partir do 'terraform-gha'
 
 on:
   pull_request:
@@ -14,6 +14,7 @@ jobs:
     name: 'terraform plan'
     runs-on: ubuntu-latest
     env:
+      TF_LOG: "DEBUG"
       TF_WORKING_DIR: 'terraform-gha'
       TF_VAR_rdsuser: ${{ secrets.RDSUSER }}
       TF_VAR_rdspass: ${{ secrets.RDSPASS }}
@@ -37,11 +38,11 @@ jobs:
         id: fmt
         run: terraform fmt -check
 
-      - name: show aws cli config
-        run: |
-          echo "[$AWS_ACCESS_KEY_ID]"
-          echo "[$AWS_SECRET_ACCESS_KEY]"
-          printenv
+#      - name: show aws cli config
+#        run: |
+#          echo "[$AWS_ACCESS_KEY_ID]"
+#          echo "[$AWS_SECRET_ACCESS_KEY]"
+#          printenv
 
       - name: Terraform Init
         id: init
