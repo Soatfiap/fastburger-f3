@@ -21,6 +21,7 @@ jobs:
       TF_VAR_mercado_token: ${{ secrets.MERCADO_TOKEN }}
       TF_VAR_COGNITO_AWS_ACCESS_KEY_ID: ${{ secrets.COGNITO_AWS_ACCESS_KEY_ID }}
       TF_VAR_COGNITO_AWS_SECRET_ACCESS_KEY: ${{ secrets.COGNITO_AWS_SECRET_ACCESS_KEY }}
+      TF_VAR_AWS_COGNITO_USER_POOL_ID: ${{ secrets.AWS_COGNITO_USER_POOL_ID }}      
 
     defaults:
       run:
