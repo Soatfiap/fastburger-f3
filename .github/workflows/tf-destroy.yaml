@@ -19,6 +19,9 @@ jobs:
     env:
       #TF_LOG: "DEBUG"
       TF_WORKING_DIR: 'terraform-gha'
+      TF_VAR_rdsUser: ${{ secrets.RDSUSER }}
+      TF_VAR_rdsPass: ${{ secrets.RDSPASS }}
+      TF_VAR_mercado_token: ${{ secrets.MERCADO_TOKEN }}
 
     defaults:
       run:
