@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       dir:
-        description: 'terraform diectory resources'
+        description: 'AWS ECR repository'
         required: true
-        default: 'terraform-gha'
+        default: 'fastburger'
 
 jobs:
   build-and-push:
