@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       dir:
-        description: 'Repository name'
+        description: 'Directory with terragram resources'
         required: true
-        default: 'fastburger'
+        default: 'terraform-gha'
 
 jobs:
   build-and-push:
