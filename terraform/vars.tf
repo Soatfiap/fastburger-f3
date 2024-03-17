@@ -23,11 +23,13 @@ variable "rdsDbName" {
 }
 
 variable "rdsUser" {
-  description = "Inserir usuario do banco em secrets"
+  description = "it cames from environment export"
+  type        = string
 }
 
 variable "rdsPass" {
-  description = "Inserir senha do banco em secrets"
+  description = "it cames from environment export"
+  type        = string
 }
 
 variable "instanceClass" {
@@ -51,7 +53,8 @@ variable "spring_port" {
 }
 
 variable "mercado_token" {
-  description = "Inserir token do mercado pago"
+  description = "it cames from environment export"
+  type        = string
 }
 
 variable "token_fallback" {
@@ -90,8 +93,8 @@ variable "tags" {
   type = map(string)
   default = {
     Project   = "Fiap Tech Challenge 4SOAT - g44"
-    App      = "fastburger",
-    Ambiente = "Desenvolvimento"
+    App       = "fastburger",
+    Ambiente  = "Desenvolvimento"
     ManagedBy = "terraform"
   }
 }
