@@ -79,8 +79,11 @@ variable "AWS_COGNITO_USER_POOL_ID" {
 }
 
 variable "token_fallback" {
+  #default = "ODk4NDk1ODM4NTM4MjU0OS0wMTA3MjAtOGI0NWU2ODBjZDA4NWY5OTc2ODYzYTk1NjU1ZGFmZjctMTQzNzE2NDc3"
   default = "ODk4NDk1ODM4NTM4MjU0OS0wMTA3MjAtOGI0NWU2ODBjZDA4NWY5OTc2ODYzYTk1NjU1ZGFmZjctMTQzNzE2NDc3"
 }
+
+
 
 variable "mercado_api" {
   default = "https://api.mercadopago.com"
