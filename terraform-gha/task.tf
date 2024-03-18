@@ -32,6 +32,10 @@ resource "aws_ecs_task_definition" "task" {
           value = "${var.COGNITO_AWS_SECRET_ACCESS_KEY}"
         },
         {
+          name  = "AWS_COGNITO_USER_POOL_ID"
+          value = "${var.AWS_COGNITO_USER_POOL_ID}"
+        },
+        {
           name  = "MERCADO_TOKEN"
           value = "${var.mercado_token}"
         },

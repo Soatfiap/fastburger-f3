@@ -73,6 +73,11 @@ variable "COGNITO_AWS_SECRET_ACCESS_KEY" {
   type        = string
 }
 
+variable "AWS_COGNITO_USER_POOL_ID" {
+  description = "it cames from gh secrets"
+  type        = string
+}
+
 variable "token_fallback" {
   default = "ODk4NDk1ODM4NTM4MjU0OS0wMTA3MjAtOGI0NWU2ODBjZDA4NWY5OTc2ODYzYTk1NjU1ZGFmZjctMTQzNzE2NDc3"
 }
